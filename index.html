@@ -74,65 +74,75 @@
   </header>
 
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective 3 August 2026 &middot; Last updated 3 August 2026</p>
+  <p class="meta">Effective 3 August 2026 &middot; Last updated 8 August 2026</p>
 
   <div class="summary">
-    <p><strong>The short version:</strong> Rackside does not collect, transmit, or sell your data. It has no accounts, no analytics, and no advertising. Everything you enter stays on your device.</p>
+    <p><strong>The short version:</strong> Rackside does not run analytics, advertising, or tracking, and has no user accounts. Photos, locations, and records you create in the app are stored only on your device. The one exception is the optional Pro unlock, a one-time purchase processed by Apple and RevenueCat.</p>
     <div class="pills">
-      <span class="pill">No data collection</span>
       <span class="pill">No accounts</span>
       <span class="pill">No tracking</span>
       <span class="pill">No ads</span>
+      <span class="pill">Data stays on-device</span>
     </div>
   </div>
 
   <h2>1. Who this covers</h2>
-  <p>This policy applies to the Rackside mobile application ("Rackside", "the app") for iOS and Android. Rackside is an offline reference and calculation toolkit for IT technicians.</p>
+  <p>This policy applies to the Rackside mobile application ("Rackside", "the app") for iOS and Android. Rackside is an offline field toolkit for IT technicians, covering reference tools, site surveys, and certificate tracking.</p>
 
   <h2>2. Information we collect</h2>
-  <p><strong>We collect nothing.</strong> Rackside has no servers and no backend. It does not create an account, does not ask you to sign in, and does not send your information anywhere.</p>
-  <p>Specifically, Rackside does <em>not</em> collect:</p>
+  <p><strong>We collect nothing on a server.</strong> Rackside has no backend, no user accounts, and does not transmit what you enter, capture, or store in the app anywhere. Photos, notes, survey records, and certificate entries you create stay in the app's private storage on your device.</p>
+  <p>Specifically, Rackside does <em>not</em>:</p>
   <ul>
-    <li>Personal information such as your name, email address, or phone number</li>
-    <li>Device identifiers, advertising identifiers, or location data</li>
-    <li>Usage analytics, telemetry, crash reports, or diagnostics</li>
-    <li>The contents of anything you type into the app</li>
+    <li>Ask for your name, email address, or any account sign-in</li>
+    <li>Collect device identifiers, advertising identifiers, or usage analytics</li>
+    <li>Run crash reporting, telemetry, or any third-party tracking SDK</li>
+    <li>Transmit the photos, notes, locations, or records you create to us or anyone else</li>
   </ul>
-  <p>The app contains no analytics, advertising, or third-party tracking software of any kind.</p>
 
   <h2>3. Information stored on your device</h2>
-  <p>Some features save data locally so they work between launches. This data never leaves your device, is not readable by other apps, and is not accessible to us.</p>
+  <p>Several features save data locally so they work between launches. This data never leaves your device on its own, is not readable by other apps, and is not accessible to us.</p>
   <ul>
-    <li><strong>Certificate Tracker.</strong> Entries you create — name or domain, expiry date, and any optional issuer, location, owner, and notes — are stored in the app's private storage.</li>
+    <li><strong>Certificate Tracker.</strong> Entries you create — name, expiry date, issuer, type, location, owner, and notes — plus, if you've unlocked Pro, a locally scheduled notification for upcoming expirations.</li>
+    <li><strong>Site Survey.</strong> Survey details you enter (name, customer, address), equipment checklists, location pins, photos you capture (optionally geotagged, see Permissions below), Wi-Fi signal readings, and quotes you build.</li>
+    <li><strong>Notes.</strong> Photos you capture, any freehand/arrow drawing you add to them, and the note text.</li>
     <li><strong>Bundled reference databases.</strong> Port, MAC vendor, and error-code databases ship inside the app and are copied into its private storage on first launch. These are read-only reference data and contain nothing about you.</li>
   </ul>
+  <p>Deleting a record inside the app, or uninstalling Rackside, permanently removes this data from your device — see section 7.</p>
 
   <h2>4. Permissions</h2>
+  <p>Rackside asks for the following device permissions. Each is optional in the sense that declining it only disables the specific feature that needs it — the rest of the app keeps working.</p>
   <ul>
-    <li><strong>Notifications (optional).</strong> If you allow notifications, Rackside schedules <em>local</em> reminders for certificate expiry dates you have entered. These are generated on your device by the operating system. Rackside does not use push notifications, does not register a push token, and no server is involved. Declining notifications disables reminders; every other feature continues to work.</li>
+    <li><strong>Camera.</strong> Used to capture photos for Site Survey and Notes, and to photograph a floor plan for the Wi-Fi Signal Heatmap. Photos are saved only to the app's private on-device storage.</li>
+    <li><strong>Location (while using the app).</strong> Used to geotag Site Survey photos and to place points on the GPS-based Signal Heatmap. Location data is embedded in the survey record on your device only; it is never transmitted.</li>
+    <li><strong>Photo library.</strong> Used to let you pick an existing image as a Signal Heatmap floor plan, and to save survey photos to your library if you choose to. Rackside does not scan or access your library beyond what you explicitly select.</li>
+    <li><strong>Notifications.</strong> If allowed, Rackside schedules <em>local</em> reminders for certificate expiry dates you've entered (a Pro feature). These are generated on your device by the operating system — Rackside does not use push notifications, does not register a push token, and no server is involved.</li>
   </ul>
-  <p>Rackside does not request access to your location, camera, microphone, contacts, photos, or files.</p>
+  <p>Rackside does not request access to your microphone, contacts, or files outside what's listed above.</p>
 
   <h2>5. Network access</h2>
-  <p>Rackside performs no network requests in normal operation. All lookups and calculations run entirely on your device against data bundled with the app. The app is designed to be fully functional with no connectivity.</p>
-  <p>Two actions you initiate can leave the app:</p>
+  <p>Rackside's core toolkit — reference lookups, calculators, site surveys, notes, and certificate tracking — performs no network requests. All of it runs entirely on your device against data bundled with the app or that you've entered yourself.</p>
+  <p>A few actions you initiate, or that are inherent to the optional Pro purchase, do involve the network:</p>
   <ul>
+    <li><strong>In-App Purchases.</strong> Unlocking Pro is a one-time purchase processed by Apple's App Store and RevenueCat (our subscription/purchase infrastructure provider — see section 6). This involves your App Store account and purchase/transaction data, handled under Apple's and RevenueCat's own privacy policies. Rackside itself does not see your payment details.</li>
     <li><strong>Copy and Share.</strong> When you use a Copy or Share button, the selected result is placed on your clipboard or handed to the app you pick. What happens next is governed by that app's own privacy policy.</li>
     <li><strong>Links.</strong> Tapping a link in Settings (this policy, a data-source reference, or the support email) opens your browser or mail app.</li>
   </ul>
 
   <h2>6. Third parties</h2>
-  <p>Rackside integrates no third-party analytics, advertising, or data-sharing services. We share no data with anyone, because we do not have any.</p>
+  <p>Rackside integrates no advertising or analytics services. The one third party involved is:</p>
+  <ul>
+    <li><strong>RevenueCat.</strong> Processes the optional one-time Pro unlock purchase and verifies your entitlement with Apple's App Store. RevenueCat receives your App Store transaction data and an anonymous app-user identifier; it does not receive your name, email, or any content you've created in Rackside. See <a href="https://www.revenuecat.com/privacy/">RevenueCat's Privacy Policy</a>.</li>
+  </ul>
   <p>The app is distributed through the Apple App Store. Apple may independently collect information such as download counts and, if you have enabled sharing of analytics and crash data in your device settings, crash diagnostics. That collection is Apple's, governed by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>, and is outside our control. We do not receive personally identifying information from it.</p>
 
   <h2>7. Data retention and deletion</h2>
-  <p>Because your data is stored only on your device, you control it entirely. Delete individual certificate entries inside the app at any time. Uninstalling Rackside permanently removes all of its stored data from your device. We hold no copy and cannot recover it.</p>
+  <p>Because your data is stored only on your device, you control it entirely. Delete individual records — certificates, surveys, photos, notes — inside the app at any time. Uninstalling Rackside permanently removes all of its stored data from your device. We hold no copy and cannot recover it. Requests related to your App Store purchase or RevenueCat data are handled by those providers directly — see their policies linked in section 6.</p>
 
   <h2>8. Children's privacy</h2>
   <p>Rackside is a professional tool intended for general audiences and is not directed at children under 13. We do not knowingly collect information from anyone, including children.</p>
 
   <h2>9. Your rights</h2>
-  <p>Privacy laws such as the GDPR and CCPA give you rights to access, correct, export, and delete personal data a company holds about you. Rackside holds no personal data about you, so there is nothing for us to disclose, correct, or erase. Data stored locally is under your direct control as described in section 7. We do not sell or share personal information, as those terms are defined under the CCPA.</p>
+  <p>Privacy laws such as the GDPR and CCPA give you rights to access, correct, export, and delete personal data a company holds about you. Rackside itself holds no personal data about you — content you create stays on your device, and purchase data is held by Apple and RevenueCat under their own policies, not by us. Data stored locally is under your direct control as described in section 7. We do not sell or share personal information, as those terms are defined under the CCPA.</p>
 
   <h2>10. Changes to this policy</h2>
   <p>If this policy changes, the updated version will be posted at this address with a revised "Last updated" date. Material changes to how the app handles data will accompany an app update, and the change will be described here.</p>
